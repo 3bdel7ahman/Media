@@ -464,20 +464,6 @@ hr {
     border-top: 1px dotted;
 }
 
-.card-title {
-  border-bottom: 2px solid;
-  padding-bottom: 5px;
-  position: relative;
-}
-
-.card-title::after {
-  content: " /f356";
-  position: absolute;
-  right: 10px;
-  top: 0;
-}
-
-
 .card a , .card-top a {
     color: var(--theme-color);
     text-decoration: none;
@@ -565,6 +551,19 @@ hr {
 --------------- business -------------------
 ---------------------------------------*/
 
+
+.business-container .card-title {
+  border-bottom: 2px solid;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.business-container  .card-title::after {
+  content: " /f356";
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
 
 .businessCategery-title {
     border-bottom: 2px solid;
