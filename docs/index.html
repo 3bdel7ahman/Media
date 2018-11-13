@@ -310,10 +310,92 @@
                                         <a  class="text-white" href="#">U.S.A</a>
                                 </div>
                                 <div class="col-sm">
-                                        <a  class="text-white" href="signUp.html">Sign Up</a>
+                                        <a  class="text-white" href="#"  onclick="document.getElementById('id02').style.display='block'">Sign Up</a>
+                                        <!-- The Modal -->
+                                      <div id="id02" class="modal">
+                                        <span onclick="document.getElementById('id02').style.display='none'"
+                                      class="close" title="Close Modal">&times;</span>
+                                      <div class="body-container">
+                                          <div class="container">
+                                              <h1 class="text-center">Sign Up</h1>
+                                              <form style="width: 45%;margin: auto">
+                                                    <div class="form-row">
+                                                      <div class="form-group col-md-6">
+                                                        <label for="name">Name:</label>
+                                                        <input type="text" class="form-control" id="name" placeholder="first Name...">
+                                                      </div>
+                                                      <div class="form-group col-md-6">
+                                                        <label for="nickName">Nick Name</label>
+                                                        <input type="text" class="form-control" id="nickName" placeholder="last Name...">
+                                                      </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                      <label for="Email">Email</label>
+                                                      <input type="email" class="form-control" id="Email" placeholder="Example@gmail.com">
+                                                    </div>
+                                                    <div class="form-group">
+                                                      <label for="password">Password</label>
+                                                      <input type="text" class="form-control" id="password" placeholder="Password...">
+                                                    </div>
+                                                    <div class="form-group">
+                                                      <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                        <label class="form-check-label" for="gridCheck">
+                                                          Remmner Me
+                                                        </label>
+                                                      </div>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-signUp">Sign Up</button>
+                                                    <ul class="list-unstyled" style="margin-top: 1rem">
+                                                        <li class="d-inline">
+                                                          <button type="button" class="btn btn-google">
+                                                            <svg style="width: 27px;height: inherit;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                 width="50" height="50"
+                                                                 viewBox="0 0 48 48"
+                                                                 style="fill:#000000;"><g id="surface1"><path style=" fill:#FFC107;" d="M 43.609375 20.082031 L 42 20.082031 L 42 20 L 24 20 L 24 28 L 35.304688 28 C 33.652344 32.65625 29.222656 36 24 36 C 17.371094 36 12 30.628906 12 24 C 12 17.371094 17.371094 12 24 12 C 27.058594 12 29.84375 13.152344 31.960938 15.039063 L 37.617188 9.382813 C 34.046875 6.054688 29.269531 4 24 4 C 12.953125 4 4 12.953125 4 24 C 4 35.046875 12.953125 44 24 44 C 35.046875 44 44 35.046875 44 24 C 44 22.660156 43.863281 21.351563 43.609375 20.082031 Z "></path><path style=" fill:#FF3D00;" d="M 6.304688 14.691406 L 12.878906 19.511719 C 14.65625 15.109375 18.960938 12 24 12 C 27.058594 12 29.84375 13.152344 31.960938 15.039063 L 37.617188 9.382813 C 34.046875 6.054688 29.269531 4 24 4 C 16.316406 4 9.65625 8.335938 6.304688 14.691406 Z "></path><path style=" fill:#4CAF50;" d="M 24 44 C 29.164063 44 33.859375 42.023438 37.410156 38.808594 L 31.21875 33.570313 C 29.210938 35.089844 26.714844 36 24 36 C 18.796875 36 14.382813 32.683594 12.71875 28.054688 L 6.195313 33.078125 C 9.503906 39.554688 16.226563 44 24 44 Z "></path><path style=" fill:#1976D2;" d="M 43.609375 20.082031 L 42 20.082031 L 42 20 L 24 20 L 24 28 L 35.304688 28 C 34.511719 30.238281 33.070313 32.164063 31.214844 33.570313 C 31.21875 33.570313 31.21875 33.570313 31.21875 33.570313 L 37.410156 38.808594 C 36.972656 39.203125 44 34 44 24 C 44 22.660156 43.863281 21.351563 43.609375 20.082031 Z "></path></g></svg>  sign in with Google
+                                                          </button>
+                                                        </li>
+                                                        <li class="d-inline" style="margin-left: 10px;">
+                                                          <button type="button" class="btn btn-facebook">
+                                                              <i class="fab fa-facebook-f"></i>  sign in with Facebook
+                                                          </button>
+                                                        </li>
+                                                    </ul>
+                                                  </form>
+                                          </div>
+                                      </div>
+
+                                      </div>
                                 </div>
                                 <div class="col-sm">
-                                        <a  class="text-white" href="signIn.html">Sign In</a>
+                                        <a  class="text-white" href="#" onclick="document.getElementById('id01').style.display='block'">Sign In</a>
+                                        <!-- The Modal -->
+                                      <div id="id01" class="modal">
+                                        <span onclick="document.getElementById('id01').style.display='none'"
+                                      class="close" title="Close Modal">&times;</span>
+                                      <div class="body-container">
+                                          <div class="container">
+                                              <h1 class="text-center">Sign In</h1>
+                                              <form style="width: 30%;margin: auto">
+                                                <div class="form-group">
+                                                  <label for="exampleInputEmail1">Email: </label>
+                                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                                </div>
+                                                <div class="form-group">
+                                                  <label for="exampleInputPassword1">Password</label>
+                                                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                                </div>
+                                                <div class="form-group form-check">
+                                                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                  <label class="form-check-label" for="exampleCheck1">Remmber me</label>
+                                                </div>
+                                                <button type="submit" class="btn btn-signIn">Sign In</button>
+                                              </form>
+                                          </div>
+                                      </div>
+                                      </div>
+
                                 </div>
                                 <div class="col-sm">
                                     <ul class="navbar-nav">
@@ -351,9 +433,11 @@
                 <hr />
                 <div class="clearfix"></div>
                 <div class="row">
-                    <div class="col-sm">
-                      <div class="card" style="width: 20rem;padding: 10px">
-                      <img class="card-img-top" src="../buid/img/181105085410-bpt102-trump-tennessee-11052018-exlarge-tease.jpg" alt="Card image cap">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="card" style="padding: 10px">
+                        <a href="#">
+                          <img class="card-img-top" src="../buid/img/181105085410-bpt102-trump-tennessee-11052018-exlarge-tease.jpg" alt="Card image cap">
+                        </a>
                       <div class="card-body">
                         <h5 class="card-title">
                             <a href="#">A vote that will shape America for years</a>
@@ -365,23 +449,27 @@
                       </div>
                     </div>
                     </div>
-                    <div class="col-sm">
-                      <div class="card" style="width: 20rem;padding: 10px;margin-bottom: 20px;">
-                      <img class="card-img-top" src="../buid/img/derer.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">
-                            <a href="#">A vote that will shape America for years</a>
-                        </h5>
-                        <p class="card-text">
-                            Trump prepares to remake his Cabinet, The Idaho chipmaker at the center of the US-China trade war, Sri Lanka crisis opens new front in India and China's battle for influence
-                        </p>
-                        <a href="#" class="btn-seeMore">see More...</a>
-                      </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="card" style="padding: 10px;margin-bottom: 20px;">
+                        <a href="#">
+                            <img class="card-img-top" src="../buid/img/derer.jpg" alt="Card image cap">
+                        </a>
+                        <div class="card-body">
+                          <h5 class="card-title">
+                              <a href="#">A vote that will shape America for years</a>
+                          </h5>
+                          <p class="card-text">
+                              Trump prepares to remake his Cabinet, The Idaho chipmaker at the center of the US-China trade war, Sri Lanka crisis opens new front in India and China's battle for influence
+                          </p>
+                          <a href="#" class="btn-seeMore">see More...</a>
+                        </div>
                     </div>
                     </div>
-                    <div class="col-sm">
-                      <div class="card" style="width: 20rem;padding: 10px">
-                      <img class="card-img-top" src="../buid/img/kolao.jpg" alt="Card image cap">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="card" style="padding: 10px">
+                        <a href="#">
+                          <img class="card-img-top" src="../buid/img/kolao.jpg" alt="Card image cap">
+                        </a>
                       <div class="card-body">
                         <h5 class="card-title">
                             <a href="#">A vote that will shape America for years</a>
@@ -396,23 +484,27 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-sm">
-                      <div class="card" style="width: 20rem;padding: 10px">
-                      <img class="card-img-top" src="../buid/img/181105085410-bpt102-trump-tennessee-11052018-exlarge-tease.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">
-                            <a href="#">A vote that will shape America for years</a>
-                        </h5>
-                        <p class="card-text">
-                            The US midterms campaign has left America torn and at war with itself. Will voters rebuke Trump, or acquiesce to his scorched-earth tactics?
-                        </p>
-                        <a href="#" class="btn-seeMore">see More...</a>
-                      </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card" style="padding: 10px">
+                      <a href="#">
+                        <img class="card-img-top" src="../buid/img/181105085410-bpt102-trump-tennessee-11052018-exlarge-tease.jpg" alt="Card image cap">
+                      </a>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                          <a href="#">A vote that will shape America for years</a>
+                      </h5>
+                      <p class="card-text">
+                          The US midterms campaign has left America torn and at war with itself. Will voters rebuke Trump, or acquiesce to his scorched-earth tactics?
+                      </p>
+                      <a href="#" class="btn-seeMore">see More...</a>
                     </div>
-                    </div>
-                    <div class="col-sm">
-                      <div class="card" style="width: 20rem;padding: 10px">
-                      <img class="card-img-top" src="../buid/img/derer.jpg" alt="Card image cap">
+                  </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card" style="padding: 10px;margin-bottom: 20px;">
+                      <a href="#">
+                          <img class="card-img-top" src="../buid/img/derer.jpg" alt="Card image cap">
+                      </a>
                       <div class="card-body">
                         <h5 class="card-title">
                             <a href="#">A vote that will shape America for years</a>
@@ -422,23 +514,27 @@
                         </p>
                         <a href="#" class="btn-seeMore">see More...</a>
                       </div>
+                  </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card" style="padding: 10px">
+                      <a href="#">
+                        <img class="card-img-top" src="../buid/img/kolao.jpg" alt="Card image cap">
+                      </a>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                          <a href="#">A vote that will shape America for years</a>
+                      </h5>
+                      <p class="card-text">
+                          North Korea issues new nuclear threat, UN starts probe into UK's extreme poverty
+                      </p>
+                      <a href="#" class="btn-seeMore">see More...</a>
                     </div>
-                    </div>
-                    <div class="col-sm">
-                      <div class="card" style="width: 20rem;padding: 10px">
-                      <img class="card-img-top" src="../buid/img/kolao.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">
-                            <a href="#">A vote that will shape America for years</a>
-                        </h5>
-                        <p class="card-text">
-                            North Korea issues new nuclear threat, UN starts probe into UK's extreme poverty
-                        </p>
-                        <a href="#" class="btn-seeMore">see More...</a>
-                      </div>
-                    </div>
-                    </div>
-                </div>
+                  </div>
+                  </div>
+              </div>
+
+
                 <!-- features -->
                 <div class="intro">
                 <h4>features: </h4>
@@ -446,23 +542,27 @@
                 <hr />
                 <div class="clearfix"></div>
                 <div class="row">
-                    <div class="col-sm">
-                      <div class="card" style="width: 20rem;padding: 10px">
-                      <img class="card-img-top" src="../buid/img/181105085410-bpt102-trump-tennessee-11052018-exlarge-tease.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">
-                            <a href="#">A vote that will shape America for years</a>
-                        </h5>
-                        <p class="card-text">
-                            The US midterms campaign has left America torn and at war with itself. Will voters rebuke Trump, or acquiesce to his scorched-earth tactics?
-                        </p>
-                        <a href="#" class="btn-seeMore">see More...</a>
-                      </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card" style="padding: 10px">
+                      <a href="#">
+                        <img class="card-img-top" src="../buid/img/181105085410-bpt102-trump-tennessee-11052018-exlarge-tease.jpg" alt="Card image cap">
+                      </a>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                          <a href="#">A vote that will shape America for years</a>
+                      </h5>
+                      <p class="card-text">
+                          The US midterms campaign has left America torn and at war with itself. Will voters rebuke Trump, or acquiesce to his scorched-earth tactics?
+                      </p>
+                      <a href="#" class="btn-seeMore">see More...</a>
                     </div>
-                    </div>
-                    <div class="col-sm">
-                      <div class="card" style="width: 20rem;padding: 10px">
-                      <img class="card-img-top" src="../buid/img/derer.jpg" alt="Card image cap">
+                  </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card" style="padding: 10px;margin-bottom: 20px;">
+                      <a href="#">
+                          <img class="card-img-top" src="../buid/img/derer.jpg" alt="Card image cap">
+                      </a>
                       <div class="card-body">
                         <h5 class="card-title">
                             <a href="#">A vote that will shape America for years</a>
@@ -472,23 +572,26 @@
                         </p>
                         <a href="#" class="btn-seeMore">see More...</a>
                       </div>
+                  </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card" style="padding: 10px">
+                      <a href="#">
+                        <img class="card-img-top" src="../buid/img/kolao.jpg" alt="Card image cap">
+                      </a>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                          <a href="#">A vote that will shape America for years</a>
+                      </h5>
+                      <p class="card-text">
+                          North Korea issues new nuclear threat, UN starts probe into UK's extreme poverty
+                      </p>
+                      <a href="#" class="btn-seeMore">see More...</a>
                     </div>
-                    </div>
-                    <div class="col-sm">
-                      <div class="card" style="width: 20rem;padding: 10px">
-                      <img class="card-img-top" src="../buid/img/kolao.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">
-                            <a href="#">A vote that will shape America for years</a>
-                        </h5>
-                        <p class="card-text">
-                            North Korea issues new nuclear threat, UN starts probe into UK's extreme poverty
-                        </p>
-                        <a href="#" class="btn-seeMore">see More...</a>
-                      </div>
-                    </div>
-                    </div>
-                </div>
+                  </div>
+                  </div>
+              </div>
+
                 <!-- world -->
                 <div class="intro">
                     <h4>World: </h4>
@@ -496,23 +599,27 @@
                 <hr />
                 <div class="clearfix"></div>
                 <div class="row">
-                    <div class="col-sm">
-                      <div class="card" style="width: 20rem;padding: 10px">
-                      <img class="card-img-top" src="../buid/img/181105085410-bpt102-trump-tennessee-11052018-exlarge-tease.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">
-                            <a href="#">A vote that will shape America for years</a>
-                        </h5>
-                        <p class="card-text">
-                            The US midterms campaign has left America torn and at war with itself. Will voters rebuke Trump, or acquiesce to his scorched-earth tactics?
-                        </p>
-                        <a href="#" class="btn-seeMore">see More...</a>
-                      </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card" style="padding: 10px">
+                      <a href="#">
+                        <img class="card-img-top" src="../buid/img/181105085410-bpt102-trump-tennessee-11052018-exlarge-tease.jpg" alt="Card image cap">
+                      </a>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                          <a href="#">A vote that will shape America for years</a>
+                      </h5>
+                      <p class="card-text">
+                          The US midterms campaign has left America torn and at war with itself. Will voters rebuke Trump, or acquiesce to his scorched-earth tactics?
+                      </p>
+                      <a href="#" class="btn-seeMore">see More...</a>
                     </div>
-                    </div>
-                    <div class="col-sm">
-                      <div class="card" style="width: 20rem;padding: 10px">
-                      <img class="card-img-top" src="../buid/img/derer.jpg" alt="Card image cap">
+                  </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card" style="padding: 10px;margin-bottom: 20px;">
+                      <a href="#">
+                          <img class="card-img-top" src="../buid/img/derer.jpg" alt="Card image cap">
+                      </a>
                       <div class="card-body">
                         <h5 class="card-title">
                             <a href="#">A vote that will shape America for years</a>
@@ -522,23 +629,26 @@
                         </p>
                         <a href="#" class="btn-seeMore">see More...</a>
                       </div>
+                  </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card" style="padding: 10px">
+                      <a href="#">
+                        <img class="card-img-top" src="../buid/img/kolao.jpg" alt="Card image cap">
+                      </a>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                          <a href="#">A vote that will shape America for years</a>
+                      </h5>
+                      <p class="card-text">
+                          North Korea issues new nuclear threat, UN starts probe into UK's extreme poverty
+                      </p>
+                      <a href="#" class="btn-seeMore">see More...</a>
                     </div>
-                    </div>
-                    <div class="col-sm">
-                      <div class="card" style="width: 20rem;padding: 10px">
-                      <img class="card-img-top" src="../buid/img/kolao.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">
-                            <a href="#">A vote that will shape America for years</a>
-                        </h5>
-                        <p class="card-text">
-                            North Korea issues new nuclear threat, UN starts probe into UK's extreme poverty
-                        </p>
-                        <a href="#" class="btn-seeMore">see More...</a>
-                      </div>
-                    </div>
-                    </div>
-                </div>
+                  </div>
+                  </div>
+              </div>
+
             </scection> <!-- End zone-1 -->
 
                 <!-- zone-2 -->
@@ -558,7 +668,7 @@
                                             <li>
                                                 <a href="#" class="row">
                                                     <img class="col-md-4" src="../buid/img/test.jpg" alt="item" style="width: 75px;height: 75px;margin: 0;    padding-right: 10px;"/>
-                                                    <span class="col-md-8" style="margin: 0;padding: 0;font-size: 13px ">
+                                                    <span class="col-md-8 spanText" style="margin: 0;padding: 0;font-size: 13px ">
                                                         <b>Holly Thomas: </b> 33 years later, Queen's Live Aid performance still  magic
                                                     </span>
                                                 </a>
@@ -566,7 +676,7 @@
                                             <li>
                                                 <a href="#" class="row">
                                                     <img class="col-md-4" src="../buid/img/test2.jpg" alt="item" style="width: 75px;height: 75px;margin: 0;    padding-right: 10px;"/>
-                                                    <span class="col-md-8" style="margin: 0;padding: 0;font-size: 13px ">
+                                                    <span class="col-md-8 spanText" style="margin: 0;padding: 0;font-size: 13px ">
                                                         <b>Holly Thomas: </b> 33 years later, Queen's Live Aid performance still  magic
                                                     </span>
                                                 </a>
@@ -574,7 +684,7 @@
                                             <li>
                                                 <a href="#" class="row">
                                                     <img class="col-md-4" src="../buid/img/test4.jpg" alt="item" style="width: 75px;height: 75px;margin: 0;    padding-right: 10px;"/>
-                                                    <span class="col-md-8 col-sm-6" style="margin: 0;padding: 0;font-size: 13px ">
+                                                    <span class="col-md-8 spanText" style="margin: 0;padding: 0;font-size: 13px ">
                                                         <b>Holly Thomas: </b> 33 years later, Queen's Live Aid performance still  magic
                                                     </span>
                                                 </a>
@@ -584,7 +694,7 @@
                                     </div>
                                 </div>
                             </div>
-                              
+
                            <div class="card col-lg-6 col-md-6">
                               <img class="card-img-top" src="../buid/img/181105085410-bpt102-trump-tennessee-11052018-exlarge-tease.jpg" alt="Card image cap">
                               <div class="card-body">
@@ -599,7 +709,7 @@
                             </div>
 
                           </div><!-- Row -->
-                          
+
                       </div><!-- pull-left-item-parent -->
 
                     <!-- pull-right-item-parent -->

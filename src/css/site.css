@@ -47,6 +47,7 @@ a:hover {
     background: rgba(0, 0, 0, .9);
     z-index: 99;
     margin: 0;
+    width: 100%;
 }
 
 .fixed-header {
@@ -191,6 +192,54 @@ a:hover {
 
 /* SIGN IN AND UP PAGES */
 
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #fff/* Fallback color */;
+    padding-top: 60px;
+}
+
+/* The Close Button */
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
 .btn-signUp, .btn-signIn {
   background: var(--theme-color);
   color: #fff;
@@ -236,7 +285,7 @@ hr {
 
 
 .card {
-    width: 20rem;
+    /*width: 20rem;*/
     padding: 10px;
     border: none;
     background: transparent;
@@ -257,9 +306,8 @@ hr {
 }
 
 .zone-1 .card-body a {
-    border-radius: none;
+    border-radius: 0;
     border: none;
-    text-decoration: underline !important;
 }
 
 
@@ -308,6 +356,12 @@ hr {
     color: var(--theme-Hover-Color);
 }
 
+@media screen and (max-width: 425px) {
+  .spanText {
+    margin: 10px 0 10px 14px !important;
+  }
+}
+
 .item-parent .list-group-item .ps-content h6 {
         font-weight: bold;
 }
@@ -328,6 +382,7 @@ hr {
 }
 
 
+
 /*---------------------------------------
 --------------- world -------------------
 ---------------------------------------*/
@@ -343,7 +398,7 @@ hr {
 }
 
 .around-world-news {
-    padding: 2rem 0; 
+    padding: 2rem 0;
 }
 
 .world-section h4 , .headOfMap{
@@ -369,7 +424,7 @@ hr {
 .media-world-link {
     color: var(--theme-color);
     text-decoration: none !important
-} 
+}
 
 .news-around-world .card a {
     text-decoration: none !important;
@@ -405,17 +460,30 @@ hr {
 --------------- health -------------------
 ---------------------------------------*/
 
-.health-section .card ul li {
+.card ul li {
     border-top: 1px dotted;
 }
 
+.card-title {
+  border-bottom: 2px solid;
+  padding-bottom: 5px;
+  position: relative;
+}
 
-.health-section .card a , .card-top a {
+.card-title::after {
+  content: " /f356";
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+
+
+.card a , .card-top a {
     color: var(--theme-color);
     text-decoration: none;
 }
 
-.health-section a:hover {
+.card a:hover {
     color: var(--theme-Hover-Color);
 }
 
@@ -437,9 +505,8 @@ hr {
 }
 
 .health-section .carousel {
-    width: 90%;
-    height: 700px;
-    margin: auto;
+    width: 100%;
+    margin: 40px auto;
 }
 
 .health-section .carousel .carousel-item {
@@ -448,11 +515,11 @@ hr {
 
 .carousel-text {
     position: absolute;
-    top: 30%;
+    bottom: 10%;
     left: 15%;
-    width: 50%;
+    width: 100%;
     color: #fff;
-    z-index: 99;
+    z-index: 999;
 }
 
 .carousel-text h1 {
@@ -478,16 +545,76 @@ hr {
     width: 5%;
 }
 
+.health-section .health-categery .card {
+  margin-bottom: 20px;
+}
+
 .health-section .health-categery .card-body {
     background: #ddd;
     position: absolute;
-    top: 50%;
+    top: 60%;
     text-align: center;
     width: 80%;
-    height: 60%;
+    height: 50%;
     padding: 1.25rem 10px;
     left: 10%;
 }
+
+
+/*---------------------------------------
+--------------- business -------------------
+---------------------------------------*/
+
+
+.businessCategery-title {
+    border-bottom: 2px solid;
+    padding-bottom: 5px;
+    width: 98%;
+    margin: auto;
+    position: relative;
+    color: inherit;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+
+  .businessCategery-title:hover {
+    color: var(--theme-Hover-Color)
+  }
+
+
+.businessCategery-title::after {
+  content: " /f356";
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+
+.overlay  img {
+  width: 80%;
+  height: 80%;
+  z-index: 9;
+  position: relative;
+}
+
+.overlay  img::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+/*
+.overlay {
+  background: var(--theme-color);
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0
+}
+*/
+
 
 /* site Footer */
 
